@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+
+<div class="green">Click me!</div>
+
+<script>
+
+    //es5
+
+    // console.log(name5);
+
+    // var name5 = 'John';
+    // var age5 = 21;
+    // name5 = 'Sam';
+
+    // es6
+
+    // let name5 = 'John';
+    // const age5 = 21;
+    // age5 = 'Sam';
+
+    // function passTest(result) {
+    //     if (result) {
+    //         var firstName = 'John';
+    //         var year = 1990
+    //     }
+    //
+    //     console.log(firstName + ' рожденный в ' + year + ' сдал тест');
+    // }
+
+    // function passTest(result) {
+    //     let firstName;
+    //     let year;
+    //     if (result) {
+    //         firstName = 'John';
+    //         year = 1990
+    //     }
+    //
+    //     // console.log(firstName + ' рожденный в ' + year + ' сдал тест');
+    //     console.log(`${firstName} рожденный в ${year} сдал тест`);
+    // }
+
+    // {
+    //     let a = 1;
+    //     {
+    //         {
+    //             console.log(a);
+    //         }
+    //     }
+    // }
+    //
+    // console.log(a);
+
+    // passTest(true);
+
+    // let i = 23;
+    //
+    // for (let i = 0; i < 5; i++) {
+    //     console.log(i);
+    // }
+    //
+    // console.log(i);
+
+
+    // Arrow func (lambda)
+
+    // const calcAge = (x, y = 50) => {
+    //     const z = y + 10;
+    //     return x + z;
+    // };
+
+    // const calcAge = x => x + 10;
+
+    // console.log(calcAge(20));
+
+
+
+    // const box = {
+    //     color: 'green',
+    //     position: 1,
+    //     clickMe() {
+    //         document.querySelector('.green').addEventListener('click', () => {
+    //             console.log(`This is box number ${this.position} and it is ${this.color}`)
+    //         })
+    //     }
+    // };
+    //
+    // box.clickMe();
+
+    // Деструктуризация
+
+    // es5
+
+    // var arr5 = ['John', 21];
+    // var name5 = arr5[0];
+    // var age5 = arr5[1];
+
+    // console.log(name5);
+    // console.log(age5);
+
+
+    // let arr6 = ['John', 21];
+    //
+    // let [name6, age6] = arr6;
+    //
+    // console.log(name6);
+    // console.log(age6);
+
+    // let obj = {
+    //     name: 'John',
+    //     lastName: 'Doe',
+    //     colors: ['white', 'black']
+    // };
+    //
+    // let {name: a, lastName: b, colors: [c, d]} = obj;
+    //
+    // console.log(c);
+    // console.log(d);
+
+
+    // const someFunc = ({name, lastName}) => {
+    //     console.log(name, lastName);
+    // };
+    //
+    // someFunc(obj);
+
+
+    // Spread operator
+
+    const calcArgs = (a, b, c, d) => a + b + c + d;
+
+    const arrNums = [2, 3, 4, 5];
+    const arrNums2 = [6, 7, 8, 9];
+
+    //es5
+    // let sum = calcArgs.apply(null, arrNums);
+
+    //es6
+    // let sum = calcArgs(...arrNums);
+
+    // let bigArr = [...arrNums, 10, ...arrNums2];
+
+    // const boxes = document.querySelectorAll('.box');
+    // const boxesArr = Array.from(boxes);
+    // const boxesArr = [...boxes];
+    //
+    // console.log(boxesArr);
+
+    // Rest param
+
+    // function someFunc(year){
+    //     // console.log(arguments);
+    //     console.log(year);
+    //     let argsArr = Array.prototype.slice.call(arguments, 1);
+    //     console.log(argsArr);
+    // }
+
+    // const someFunc = (year, ...arrYears) => {
+    //     console.log(year);
+    //     console.log(arrYears);
+    // };
+    //
+    //
+    // someFunc(1990, 1992, 1874, 2123)
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

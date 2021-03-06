@@ -1,0 +1,114 @@
+* {
+    font-family: "Helvetica Neue";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    margin: 0 auto;
+}
+header{
+    -webkit-animation: color 10s ease-in-out infinite;
+    -moz-animation: color 10s ease-in-out infinite;
+    -o-animation: color 10s ease-in-out infinite;
+    animation: color 10s ease-in-out infinite;
+    color: white;
+}
+
+/*изменение цвета в header*/
+@keyframes color {
+    0%{background-color: #FFD918;}
+    10%{background-color: #FFCF18;}
+    20%{background-color: #FFC518;}
+    30%{background-color: #FFC218;}
+    40%{background-color: #FF9D18;}
+    50%{background-color: #FF8018;}
+    60%{background-color: #FF9D18;}
+    70%{background-color: #FF9D18;}
+    80%{background-color: #FFC218;}
+    90%{background-color: #FFC518;}
+    100%{background-color: #FFCF18;}
+}
+@-webkit-keyframes color {
+    0%{background-color: #FFD918;}
+    10%{background-color: #FFCF18;}
+    20%{background-color: #FFC518;}
+    30%{background-color: #FFC218;}
+    40%{background-color: #FF9D18;}
+    50%{background-color: #FF8018;}
+    60%{background-color: #FF9D18;}
+    70%{background-color: #FF9D18;}
+    80%{background-color: #FFC218;}
+    90%{background-color: #FFC518;}
+    100%{background-color: #FFCF18;}
+}
+main{
+    margin-top: 30px;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.button-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.btn-cart{
+    width: 120px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 1em 0;
+    margin: 2em 3em;
+    color: white;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+}
+.btn-cart:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: #FF8018;
+
+}
+.menu{
+    width: 700px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #f6f6f6;
+    border-radius: 15px;
+}
+.menu_head{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+}
+.menu_head > h2{
+    margin-left: 20px;
+}
+img{
+    background-color: #f6f6f6;
+}
+h2{
+    padding: 40px 0;
+    font-weight: 500;
+}
+h4{
+    margin-top: 20px;
+    font-weight: 500;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #b69a81;
+    margin-top: 5px;
+}
+.ingredient-name{
+    width: 200px;
+    margin-left: 5px;
+}
+.sizeAndCalories{
+    color: #b69a81;
+}
